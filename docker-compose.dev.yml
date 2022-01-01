@@ -1,0 +1,20 @@
+services:
+  web:
+    platform: linux/amd64
+    build: ./app
+    volumes:
+      - app:/app
+    ports:
+      - "3000:3000"
+  db:
+    platform: linux/amd64
+    image: neo4j:3.5
+    restart: always
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - neo4j:/data
+volumes:
+  neo4j:
+  app:
