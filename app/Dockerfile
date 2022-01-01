@@ -4,11 +4,10 @@ FROM mhart/alpine-node:16.4
 RUN apk update
 RUN apk add git
 
-WORKDIR /app
-COPY package.json package-lock.json ./
-RUN npm ci
+RUN git clone https://github.com/revslaughter/pupdates.git
 
-COPY . .
+WORKDIR /pupdates/app
+RUN npm ci
 
 EXPOSE 3000
 
