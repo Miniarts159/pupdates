@@ -3,6 +3,6 @@
 </script>
 
 <div>
-  Heckin {name}!
+  Frickin {name}!
 </div>
 <p>Yeah!</p>
