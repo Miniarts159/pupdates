@@ -1,7 +1,7 @@
 <script>
-  export let name = "LUSZR";
+  export let name = "defaultUser";
 </script>
 
 <div>
-  Heckin {name}!
+  Guess who's number {name}!
 </div>
